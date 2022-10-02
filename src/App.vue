@@ -1,17 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img class="logo" src="./assets/tee-logo.png" />
+  <SignUp />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import SignUp from "./components/SignUp.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    SignUp,
+  },
+};
 </script>
 
 <style>
@@ -22,5 +21,30 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.logo {
+  width: 100px;
+}
+.signup input {
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  border: 1px solid lightskyblue;
+}
+.signup button {
+  width: 330px;
+  background-color: deepskyblue;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.signup button:hover {
+  color: blueviolet;
 }
 </style>
